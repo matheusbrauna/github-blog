@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply h-[18.5rem] grid place-items-center bg-base-700 bg-cover-img bg-no-repeat bg-cover bg-center;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-base-800 leading-8 text-base-300;
+  }
+
+  :focus{
+    outline: none;
+    boxShadow: 0 0 0 2px #3294F8;
+  }
+
+  body, input, select, textarea, button {
+    @apply font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-base-100 font-bold;
+  }
+}
